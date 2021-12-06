@@ -1,0 +1,15 @@
+<h1>Student</h1>
+<div>The first student is called {{ student1.firstName }} {{ student1.lastName }}</div>
+<div *ngIf="student2">The second student is called {{ student2.firstName }} {{ student2.lastName }}</div>
+
+<div></div>
+
+<button (click)="fillStudents()">Fill Students</button>
+<div *ngIf="students">
+  <ul>
+    <li *ngFor="let student of students">{{ student.firstName }}</li>
+    <p></p>
+   
+  </ul>
+</div>
+

@@ -1,0 +1,16 @@
+<h1>Books</h1>
+
+
+<div><button (click)="getBookByIsbn()">Get Book By ISBN </button></div>
+<p>{{replyWebServei.isbn13}}</p>
+
+<button (click)="getAllNewBooks()">Fill Books</button>
+<div *ngIf="replyBooksNew">
+<ul>
+<li *ngFor= "let book of replyBooksNew">{{book.title}}</li>
+</ul>
+
+</div>
+  
+
+
