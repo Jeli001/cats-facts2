@@ -20,8 +20,8 @@ newBook : newBooks;
 constructor(private bookService: BookService) { 
 }    
     ngOnInit(): void {
-       // this.getBookByIsbn();
-       // this.getAllNewBooks();
+        this.getBookByIsbn();
+        this.getAllNewBooks();
     }
 
     getBookByIsbn(){  

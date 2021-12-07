@@ -1,16 +1,38 @@
 <h1>Books</h1>
 
 
-<div><button (click)="getBookByIsbn()">Get Book By ISBN </button></div>
-<p>{{replyWebServei.isbn13}}</p>
+<!-- <div><button (click)="getBookByIsbn()">Get Book By ISBN </button></div>
+<p>{{replyWebServei.isbn13}}</p> -->
 
-<button (click)="getAllNewBooks()">Fill Books</button>
+<div>
+<!-- <button (click)="getAllNewBooks()">Fill Books</button> -->
+<table *ngIf="replyBooksNew">
+    <thead>
+        <th>Title</th>
+        <th>Isbn</th>
+        <th>ChildComponent</th>
+        <th>ExtraChild</th>
+    </thead>
+
+    <tbody *ngFor= "let book of replyBooksNew">
+        <tr>
+          <td>{{book.title}}</td>
+           <td>{{book.isbn13}}</td>
+           <td><my-child></my-child></td>
+           <td><book-rating [book]="book"></book-rating>
+            </td>
+           <td></td>
+        </tr>
+      
+    </tbody>
+</table>
+</div>
+
+<!-- <button (click)="getAllNewBooks()">Fill Books</button>
 <div *ngIf="replyBooksNew">
 <ul>
 <li *ngFor= "let book of replyBooksNew">{{book.title}}</li>
 </ul>
 
 </div>
-  
-
-
+   -->
