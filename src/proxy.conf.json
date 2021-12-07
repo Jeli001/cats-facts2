@@ -1,0 +1,11 @@
+{
+    "/cats": {
+        "target": "https://catfact.ninja/",
+        "secure": false,
+        "changedOrigin": true,
+        "logLevel": "debug",
+        "pathRewrite": {
+            "^/api": ""
+          }
+    }
+}
