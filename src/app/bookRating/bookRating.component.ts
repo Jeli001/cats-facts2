@@ -16,15 +16,24 @@ import { BookComponent } from '../book/book.component';
       
     @Input() book: Book;
 
+    numberTwelve: number;
     // @Input() parentBook : Book;
     // constructor(@Inject(BookComponent) public book: BookComponent){
     //        }
 
-    constructor(){}
+    constructor(){
+        this.numberTwelve = 0;
+    }
 
     ngOnInit()  {
         
     }
+
+    optellen(){
+        this.numberTwelve ++;
+        console.log(this.numberTwelve);
+    }
+
   }
   
  

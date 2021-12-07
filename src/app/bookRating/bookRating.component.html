@@ -1,21 +1,24 @@
-{{book.isbn13}}
+<table>
+
+    <tr>
+        <td>Isbn nummer</td>
+        <td>{{book.isbn13}}</td>
+    </tr>
+    <tr>
+        <td>Title</td>
+        <td>{{book.title}}</td>
+    </tr>
+    <tr>
+        <td>Subtitle</td>
+        <td>{{book.subtitle}}</td>
+    </tr>
+    <tr>
+        <td>Rating</td>
+        <td><input type="text"value ="{{numberTwelve}}"> </td>
+        <td><button (click)="optellen()">Optellen</button></td>
+    </tr>
     <!-- <tr>
-        <td>Name</td>
-        <td>{{Book}}</td>
-    </tr>
-    <tr>
-        <td>Branch</td>
-        <td>{{Branch}}</td>
-    </tr>
-    <tr>
-        <td>Mobile</td>
-        <td>{{Mobile}}</td>
-    </tr>
-    <tr>
-        <td>Gender</td>
-        <td>{{Gender}}</td>
-    </tr>
-    <tr>
-        <td>Age</td>
-        <td>{{Age}}</td>
+        <td>Rating</td>
+        <td>{{book.Rating}}</td>
     </tr> -->
+</table>
