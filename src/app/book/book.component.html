@@ -5,12 +5,18 @@
 <p>{{replyWebServei.isbn13}}</p>
 
 <button (click)="getAllNewBooks()">Fill Books</button>
-<div *ngIf="replyBooksNew">
+<!-- <div *ngIf="replyBooksNew">
 <ul>
-<li *ngFor= "let book of replyBooksNew">{{book.title}}</li>
+<li *ngFor= "let book of replyBooksNew"><book-rating></book-rating></li>
 </ul>
 
+</div> -->
+
+<div>
+    <book-rating *ngFor="let replyWebServei of replyBooksNew" [book]="replyWebServei"></book-rating>
 </div>
   
 
 
+<!-- replyBooksNew: Book[] = [];
+replyWebServei : Book; -->

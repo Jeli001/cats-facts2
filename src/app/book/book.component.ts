@@ -18,6 +18,10 @@ replyWebServei : Book;
 newBook : newBooks;
 
 constructor(private bookService: BookService) { 
+let bookTest = Book;
+//let bookList = Book[] = [];
+let newBookTest = newBooks;
+  
 }    
     ngOnInit(): void {
        // this.getBookByIsbn();

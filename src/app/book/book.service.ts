@@ -12,7 +12,7 @@ export class BookService {
 
     constructor(private http:HttpClient) { }
  
-     
+     // AI documentation https://api.itbook.store/#api-books
 
     
     getBookServiceByIsbn(isbn:string): Observable<Book>{
